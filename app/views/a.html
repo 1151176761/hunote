@@ -1,0 +1,45 @@
+﻿<div>
+  <nav class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Brand</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">所有日记</a></li>
+          <li class="active"><a ui-sref="daohang">私人日记</a></li>
+          <li class="active"><a ui-sref="dengl">登录</a></li>
+          <li class="active"><a href="#">查找</a></li>
+          <li class="active"><a href="#">修改密码</a></li>
+          <li class="active"><a ng-click="tuichu()">退出</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+<!--<table class="table table-condensed">-->
+  <!--<tr  ng-repeat="x in data">-->
+    <!--<td>{{x.title}}</td>-->
+    <!--<td>{{x.content}}</td>-->
+  <!--</tr>-->
+<!--</table>-->
+  <form role="form" class="ng-pristine ng-valid">
+    <div class="form-group">
+      <input type="text" class="form-control input-lg"  id="feedbackinput"placeholder="title" ng-model="updata.title">
+    </div>
+    <div class="form-group">
+      <textarea class="form-control input-lg" id="feedbackcontent" name="feedbackcontent" rows="5"  placeholder="content" ng-model="updata.content"></textarea>
+    </div>
+  </form>
+  <!--<input ng-model="updata.title" type="text" />-->
+<!--<input ng-model="updata.content" type="text" />-->
+  <button type="submit" class="btn btn-primary" ng-click="add()" style="float:right; margin-right:15px;">save</button>
+</div>
+
